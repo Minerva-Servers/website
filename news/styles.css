@@ -1,0 +1,201 @@
+html, body {
+    font-family: system-ui;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Hide scroll bar while allowing scrolling */
+html {
+    overflow: -moz-scrollbars-none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.titles h1 {
+    margin: 0;
+    margin-left: 5%;
+}
+
+.titles p {
+    margin: 5px 0 0;
+    margin-left: 6.5%;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Space between each social link */
+    margin-right: 5%;
+}
+
+.socials a {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socials a img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 8px;
+}
+
+/* Hover effect */
+.socials a:hover {
+    color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    flex-grow: 1;
+}
+
+.devblog {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 600px; /* Clamp the thumbnail size */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.devblog h2 {
+    margin-top: 0;
+}
+
+.devblog p {
+    color: #555;
+}
+
+.extra-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+/* Clamp the size of additional content images */
+.content-image {
+    width: 100%;
+    max-width: 800px; /* Set a max width for images */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Clamp the size of videos */
+.content-video {
+    width: 100%;
+    max-width: 800px; /* Set a max width for videos */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 16px;
+}
+
+.show-more {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.show-more:hover {
+    background-color: #555;
+}
+
+.show-more:active {
+    background-color: #007BFF;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00bbff;
+}
+
+a:active {
+    color: rgb(44, 185, 220);
+}
+
+.changelog-item {
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.changelog-item .label {
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 16px;
+    text-transform: uppercase;
+}
+
+.changelog-item .text {
+    flex-grow: 1;
+}
+
+.changelog-item .details {
+    color: #555;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Colors for different changelog types */
+.added .label {
+    background-color: #30d15b; /* Green for ADDED */
+    color: white;
+}
+
+.changed .label {
+    background-color: #ffaf19; /* Orange for CHANGED */
+    color: white;
+}
+
+.fixed .label {
+    background-color: #3da9fc; /* Blue for FIXED */
+    color: white;
+}

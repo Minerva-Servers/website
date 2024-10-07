@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Devblog</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="titles">
+                    <h1>Minerva Servers</h1>
+                    <p>Stay up-to-date with the latest news and updates from Minerva Servers.</p>
+                </div>
+
+                <div class="socials">
+                    <a href="https://discord.minerva-servers.com" target="_blank">
+                        <img src="discord-white-icon.png" alt="Discord"> Discord
+                    </a>
+
+                    <a href="https://vyhub.minerva-servers.com" target="_blank">
+                        <img src="vyhub-white-icon.png" alt="VyHub"> VyHub
+                    </a>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="devblog">
+                    <img src="trainstation_1.jpg" class="thumbnail">
+                    <h2>Rebirth of Half-Life 2 Roleplay Retail</h2>
+                    <p>With the realisation that the impulse and Helix combination was not working out, we have decided to rebirth our Half-Life 2 Roleplay server with the retail look and feel in mind. This means that we will be using the default Half-Life 2 map and assets, and we will be making use of the Helix framework to allow for a more efficient development process.</p>
+                    <button class="show-more">Show More</button>
+                    <div class="extra-content">
+                        <p>Our goal is to provide a more authentic Half-Life 2 Roleplay experience for our players, and we believe that this change will help us achieve that. We are excited to see how this new direction will impact our community, and we hope that our players will enjoy the changes that we have made.</p>
+
+                        <p>If you have any questions or feedback about this new direction, please feel free to reach out to us on our <a href="https://discord.minerva-servers.com" target="_blank">Discord server</a>. We are always looking for ways to improve our servers and provide the best possible experience for our players, so your input is greatly appreciated.</p>
+
+                        <p>Thank you for your continued support, and we look forward to seeing you in our discord!</p>
+
+                        <div class="changelog-item added">
+                            <span class="label">ADDED</span>
+                            <span class="text">Chatbox revert to last message button <span class="details">(up arrow)</span></span>
+                        </div>
+                    
+                        <div class="changelog-item added">
+                            <span class="label">ADDED</span>
+                            <span class="text">Storage mass moving <span class="details">You can now store several stacked items in one go</span></span>
+                        </div>
+                    
+                        <div class="changelog-item changed">
+                            <span class="label">CHANGED</span>
+                            <span class="text">Molotov fire size from 64 to 74</span>
+                        </div>
+                    
+                        <div class="changelog-item fixed">
+                            <span class="label">FIXED</span>
+                            <span class="text">Issue where the inventory tabs would dupe when items are interacted with</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer>
+                <p>&copy; 2024 <a href="https://discord.minerva-servers.com" target="_blank">Minerva Servers</a>. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <script>
+            const buttons = document.querySelectorAll('.show-more');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const extraContent = this.nextElementSibling;
+                    extraContent.style.display = extraContent.style.display === 'block' ? 'none' : 'block';
+                    this.textContent = extraContent.style.display === 'block' ? 'Show Less' : 'Show More';
+                });
+            });
+        </script>
+
+    </body>
+</html>
