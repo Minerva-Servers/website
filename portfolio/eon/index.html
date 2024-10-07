@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eon (bloodycop)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-toggle-checkbox">
+        <label for="dark-mode-toggle-checkbox" id="dark-mode-toggle-label">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                <circle cx="12" cy="12" r="5"/>
+            </svg>
+        </label>
+    </div>
+
+    <header>
+        <h1>eon (bloodycop)</h1>
+        <p>Garry's Mod Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Greetings, fellow scientist! Welcome to my lab, over there on the board you can see my name, if not, it's eon. Also known as bloodycop. I am a developer at Minerva Servers, what's that you may ask yourself? Keep Reading!
+        </p>
+        <p>
+            I have been working on projects in Garry's Mod since 2021, I was inspired by a few and helped by many.
+        </p>
+    </section>
+
+    <section id="minerva">
+        <h2>Minerva Servers</h2>
+        <p>
+            Minerva Servers is an online Garry's Mod community that hosts a wide range of servers for its dedicated player base. The community's main attraction is its Half-Life 2 Roleplay scene, which draws players interested in immersive roleplaying experiences. Founded on October 12, 2022, by Riggs and some of his friends, Minerva Servers originally started as a server focusing on SCP Roleplay. It later branched out to include the Half-Life 2 Roleplay scene, which has since become its core feature. Over time, it has expanded significantly and become a prominent and well-respected name in the Garry's Mod community. The community continues to grow, offering various servers and activities to engage and entertain its members.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Minerva Servers - Half-Life 2 Roleplay</h3>
+            <p>A faithful recreation of impulse: Half-Life 2 Roleplay running on the Helix Framework. Made by Riggs and myself.</p>
+            <ul id="minerva-images">
+                <!-- Images will be dynamically added here -->
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>GlowLib</h3>
+            <p>GlowLib is the newer version of GlowEyes, an older project I had worked on, unfortunately it was deemed un-optimized and left to rot. After sometime I felt motivated to re-create a CLEANER, OPTIMIZED and GOOD LOOKING version of it.</p>
+
+            <ul id="glowlib-images">
+                <!-- Images will be dynamically added here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="downloads">
+        <h2>Downloads</h2>
+        <ul>
+            <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3279071164" target="_blank">GlowLib</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCurHS3iLyptMSQsxUtz21hQ" target="_blank">YouTube</a></li>
+            <li><a href="https://minerva-servers.com/discord" target="_blank">Discord</a></li>
+            <li><a href="https://steamcommunity.com/id/bloodycop/" target="_blank">Steam</a></li>
+            <li><a href="https://github.com/bloodycop7" target="_blank">GitHub</a></li>
+            <li><a href="https://www.paypal.me/minervaservers" target="_blank">PayPal</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Minerva Servers. All rights reserved.</p>
+    </footer>
+
+    <div id="lightbox" class="hidden">
+        <div id="lightbox-content">
+            <span id="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

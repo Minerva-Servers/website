@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Join Steam Server</title>
+        <script>
+            function joinSteamServer() {
+                const ipAddress = '5.182.207.110:27025';
+                const steamUrl = `steam://connect/${ipAddress}`;
+                const userConfirmed = confirm('Do you want to join the server?');
+                if (userConfirmed) {
+                    window.location.href = steamUrl;
+                }
+            }
+
+            window.onload = joinSteamServer;
+        </script>
+    </head>
+    <body>
+        <h1>Joining Steam Server...</h1>
+        <p>If you do not get prompted, please <a href="steam://connect/5.182.207.110:27025">click here to join the server</a>.</p>
+    </body>
+</html>
